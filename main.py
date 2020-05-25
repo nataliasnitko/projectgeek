@@ -18,10 +18,7 @@ def calculatePMAmount(teamSize):
 def calculateRMAmount(teamSize):
     rmCriteriaNumber = 20
 
-    if (teamSize <= rmCriteriaNumber):
-        return 1
-    else:
-        return math.ceil(teamSize / rmCriteriaNumber)
+    return 1 if teamSize <= rmCriteriaNumber else math.ceil(teamSize / rmCriteriaNumber)
 
 # Calculation of designers will be performed by this function.
 def calculateDesignerAmount(teamSize):
